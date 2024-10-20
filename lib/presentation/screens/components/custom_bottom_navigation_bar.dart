@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:red_social_mensajeria_utn/constants.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final int selectedIndex;
@@ -13,6 +14,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
+      elevation: 1,
       type: BottomNavigationBarType.fixed,
       currentIndex: selectedIndex,
       onTap: (value) {

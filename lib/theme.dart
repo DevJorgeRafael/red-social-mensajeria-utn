@@ -34,7 +34,7 @@ ThemeData darkThemeData(BuildContext context) {
   // we just modify it as our need
   return ThemeData.dark().copyWith(
     primaryColor: kPrimaryColor,
-    scaffoldBackgroundColor: kContentColorLightTheme,
+    scaffoldBackgroundColor: kDarkBlueColor,
     appBarTheme: appBarTheme.copyWith(backgroundColor: kContentColorLightTheme),
     iconTheme: const IconThemeData(color: kContentColorDarkTheme),
     textTheme: GoogleFonts.interTextTheme(Theme.of(context).textTheme)
@@ -45,7 +45,7 @@ ThemeData darkThemeData(BuildContext context) {
       error: kErrorColor,
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      backgroundColor: kContentColorLightTheme,
+      backgroundColor: kDarkBlueColor,
       selectedItemColor: Colors.white70,
       unselectedItemColor: kContentColorDarkTheme.withOpacity(0.32),
       selectedIconTheme: const IconThemeData(color: kPrimaryColor),
