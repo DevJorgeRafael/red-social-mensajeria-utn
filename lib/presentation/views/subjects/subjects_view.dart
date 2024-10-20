@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:red_social_mensajeria_utn/constants.dart';
-import 'package:red_social_mensajeria_utn/screens/components/base_screen.dart';
+import 'package:red_social_mensajeria_utn/presentation/views/base_view.dart';
 
-class HistoryScreen extends StatelessWidget {
-  const HistoryScreen({super.key});
+class SubjectsView extends StatelessWidget {
+  const SubjectsView({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return BaseScreen(
+    return BaseView(
       customAppBar: buildAppBar(),
-      body: const Center(
-        child: Text('History Screen'),
+      body: Center(
+        child: const Text(
+            'Subjects Screen'), // El contenido específico de esta pantalla
       ),
-      selectedIndex: 3,
-
     );
   }
 
@@ -21,7 +20,7 @@ class HistoryScreen extends StatelessWidget {
     return AppBar(
       backgroundColor: kPrimaryColor,
       automaticallyImplyLeading: false,
-      title: const Text("History"),
+      title: const Text("Asignaturas"),
       actions: [
         IconButton(
           icon: const Icon(Icons.search),

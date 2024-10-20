@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:red_social_mensajeria_utn/screens/screens.dart';
+import 'package:red_social_mensajeria_utn/presentation/screens/main_screen.dart';
+import 'package:red_social_mensajeria_utn/presentation/screens/screens.dart';
 
 final GoRouter router = GoRouter(
   routes: [
@@ -13,23 +14,13 @@ final GoRouter router = GoRouter(
       pageBuilder: (context, state) => NoTransitionPage(child: const SigninOrSignupScreen()),
     ),
     GoRoute(
-      path: '/chats',
-      pageBuilder: (context, state) => NoTransitionPage(child: const ChatsScreen()),
+      path: '/main',
+      pageBuilder: (context, state) => NoTransitionPage(child: const MainScreen()),
 
     ),
-    GoRoute(
-      path: '/subjects',
-      pageBuilder: (context, state) => NoTransitionPage(child: const SubjectsScreen()),
-    ),
-    GoRoute(
-      path: '/community',
-      pageBuilder: (context, state) => NoTransitionPage(child: const CommunityScreen()),
-    ),
-    GoRoute(
-      path: '/history',
-      pageBuilder: (context, state) => NoTransitionPage(child: const HistoryScreen()),
-    ),
   ],
+
+  initialLocation: '/main'
 );
 
 class NoTransitionPage<T> extends Page<T> {

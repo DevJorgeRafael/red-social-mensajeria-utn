@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../components/primary_button.dart';
-import '../../constants.dart';
-import '../chats/chats_screen.dart';
+import '../../../components/primary_button.dart';
+import '../../../constants.dart';
+import '../../views/chats/chats_view.dart';
 
 class SigninOrSignupScreen extends StatelessWidget {
   const SigninOrSignupScreen({super.key});
@@ -28,7 +28,7 @@ class SigninOrSignupScreen extends StatelessWidget {
                 press: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => const ChatsScreen(),
+                    builder: (context) => const ChatsView(),
                   ),
                 ),
               ),

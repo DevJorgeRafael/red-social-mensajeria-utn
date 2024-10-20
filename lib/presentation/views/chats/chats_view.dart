@@ -1,25 +1,24 @@
-import 'package:red_social_mensajeria_utn/screens/components/base_screen.dart';
+import 'package:red_social_mensajeria_utn/presentation/views/base_view.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 import 'package:flutter/material.dart';
 
 import 'components/body.dart';
 
-class ChatsScreen extends StatefulWidget {
-  const ChatsScreen({super.key});
+class ChatsView extends StatefulWidget {
+  const ChatsView({super.key});
 
   @override
-  State<ChatsScreen> createState() => _ChatsScreenState();
+  State<ChatsView> createState() => _ChatsViewState();
 }
 
-class _ChatsScreenState extends State<ChatsScreen> {
-  final int _selectedIndex = 0;
+class _ChatsViewState extends State<ChatsView> {
+
   @override
   Widget build(BuildContext context) {
-    return BaseScreen(
+    return BaseView(
       customAppBar: buildAppBar(),
       body: const Body(),
-      selectedIndex: _selectedIndex,
     );
   }
 
