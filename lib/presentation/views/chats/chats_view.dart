@@ -26,10 +26,10 @@ class _ChatsViewState extends State<ChatsView> {
     return AppBar(
       backgroundColor: kPrimaryColor,
       automaticallyImplyLeading: false,
-      title: const Text("Chats"),
+      title: const Text("Chats", style: TextStyle(color: Colors.white),),
       actions: [
         IconButton(
-          icon: const Icon(Icons.search),
+          icon: const Icon(Icons.search, color: Colors.white),
           onPressed: () {},
         ),
       ],

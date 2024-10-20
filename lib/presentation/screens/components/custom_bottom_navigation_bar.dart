@@ -13,7 +13,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      type: BottomNavigationBarType.shifting,
+      type: BottomNavigationBarType.fixed,
       currentIndex: selectedIndex,
       onTap: (value) {
         onItemSelected(value);

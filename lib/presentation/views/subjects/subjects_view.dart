@@ -20,10 +20,11 @@ class SubjectsView extends StatelessWidget {
     return AppBar(
       backgroundColor: kPrimaryColor,
       automaticallyImplyLeading: false,
-      title: const Text("Asignaturas"),
+      title: const Text( "Asignaturas", style: TextStyle(color: Colors.white),
+      ),
       actions: [
         IconButton(
-          icon: const Icon(Icons.search),
+          icon: const Icon(Icons.search, color: Colors.white),
           onPressed: () {},
         ),
       ],
